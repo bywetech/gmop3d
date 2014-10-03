@@ -1,0 +1,54 @@
+The gMOP3D version 0.0.1 software is a Manipulator or Industrial Robots 
+MOtion Path 3D simulation and animation system base on gnu.
+This software only do ari thmetic and calculating  the path.
+It depends the OpenSCAD environment for simuation and animation of motion.
+
+You can use it simulating X Y Z coordinate CNC with out G code. 
+It maybe use to axle running one straight line, as this straight path
+as the CNC linear motion system.
+
+
+This is the first software of me, so it may have alots of mistakes of code
+or others application problem, email to me: bywetech@foxmail.com
+
+
+
+
+Please reads OpenSCAD Manual at firstly.
+
+There have two parts of model build.
+
+First is build Manipulator(Industrial Robotic arm) axle rotate motion model.
+This have writed in source code, you can changing datas in  gmp16.h.
+
+Second, terminal path model.
+
+The first version only support cube, cubic model, it support
+
+1, translate, means cube path  model 's position.
+2, rotate, cube can be rotate x, y, z, any orientation.
+3, cube, size of a cubic model.
+
+Builds model same like builds model in openSCAD, but because we needs 
+re-calculating the surface of model, every point of surface, 
+so you must enter the value again build the path model.
+
+
+How to install?
+
+./configure && make
+sudo make install
+
+
+FAQ:
+
+Q1, If you running animation, but the openSCAD still not working, how to ?
+
+A1: This software animation must use Automatic reload and compile.
+
+Menu of below:
+->Design->Automatic Relaod and Compile, keep this function be working.   
+
+Thanks for svchem corp Mr.Song Furu greatly support for this project.
+
+
